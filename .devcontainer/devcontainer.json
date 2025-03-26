@@ -38,6 +38,9 @@
         "azure-cli": "latest",
         "git-lfs": "latest",
         "github-cli": "latest",
-        "powershell": "latest"
+        "powershell": "latest",
+        "node": {
+            "version": "16"
+          }
     }
 }
