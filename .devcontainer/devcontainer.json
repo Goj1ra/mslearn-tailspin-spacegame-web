@@ -34,13 +34,13 @@
         }
     },
     "features": {
+        "node": {
+            "version": "16"
+          },
         "terraform": "latest",
         "azure-cli": "latest",
         "git-lfs": "latest",
         "github-cli": "latest",
-        "powershell": "latest",
-        "node": {
-            "version": "16"
-          }
+        "powershell": "latest"
     }
 }
