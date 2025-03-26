@@ -1,4 +1,5 @@
 FROM mcr.microsoft.com/devcontainers/dotnet:6.0
+FROM mcr.microsoft.com/dotnet/sdk:7.0
 
 # Install NodeJS
 # [Choice] Node.js version: none, lts/*, 18, 16, 14
@@ -7,6 +8,8 @@ RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/
 
 # Install Gulp
 RUN npm install --global gulp-cli
+
+RUN apt-get update && apt-get install -y git
 
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 
